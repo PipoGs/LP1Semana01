@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace ManyStrings
@@ -8,6 +9,18 @@ namespace ManyStrings
         private static void Main(string[] args)
         {   
             Console.OutputEncoding = Encoding.UTF8;
+
+            //Variables for Exercise 6
+            double xx = 1.23456;
+            int ii = 23;
+
+            //String Conversion
+
+            string convers1 = $"xx={xx:f2}";
+            string convers2 = $"xx={xx:p1}";
+
+            string convers3 = $"ii={ii:x}";
+            string convers4 = $"ii={ii:c}";
 
             //Ints used for Strings
             int number2 = 9;
@@ -33,7 +46,6 @@ namespace ManyStrings
             Console.WriteLine("Hello LP1!");
 
             //Strings
-
             Console.WriteLine(string1);
             Console.WriteLine(string2);
             Console.WriteLine(string3);
@@ -42,6 +54,13 @@ namespace ManyStrings
             Console.WriteLine(string4);
             Console.WriteLine(string5);
             Console.WriteLine(string6);
+
+            //Strings Converted
+            Console.WriteLine(convers1);
+            Console.WriteLine(convers2);
+            Console.WriteLine(convers3);
+            Console.WriteLine(convers4);
+
         }
     }
 }
