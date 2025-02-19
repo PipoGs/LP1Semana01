@@ -12,7 +12,7 @@ namespace ManyStrings
 
             //Variables for Exercise 6
             double xx = 1.23456;
-            int ii = 23;
+            int ii = 19;
 
             //String Conversion
 
