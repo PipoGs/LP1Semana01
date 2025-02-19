@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace VariousTypes
 {
@@ -7,7 +8,10 @@ namespace VariousTypes
     {
        
         private static void Main(string[] args)
+
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
             int number;
             number = 8;
 
@@ -19,6 +23,11 @@ namespace VariousTypes
 
             ulong number5 = 7UL;
 
+            //Unicode Symbols
+
+            char copyrightSymbol ='\u00a9';
+
+
 
             Console.WriteLine("Hello LP1!");
             Console.WriteLine(number);
@@ -26,6 +35,7 @@ namespace VariousTypes
             Console.WriteLine(number3);
             Console.WriteLine(number4);
             Console.WriteLine(number5);
+            Console.WriteLine(copyrightSymbol);
         }
     }
 }
