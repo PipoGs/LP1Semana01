@@ -27,6 +27,15 @@ namespace VariousTypes
 
             char copyrightSymbol ='\u00a9';
 
+            char StarSymbol ='\u2727';
+
+            //Strings
+
+            string message = "Hello World!";
+            
+            message = "Bye World";
+
+            string StringTest = "One tab\t and one copyright\u03a9";
 
 
             Console.WriteLine("Hello LP1!");
@@ -35,7 +44,12 @@ namespace VariousTypes
             Console.WriteLine(number3);
             Console.WriteLine(number4);
             Console.WriteLine(number5);
+
             Console.WriteLine(copyrightSymbol);
+            Console.WriteLine(StarSymbol);
+
+            Console.WriteLine(message);
+            Console.WriteLine(StringTest);
         }
     }
 }
