@@ -12,6 +12,8 @@ namespace VariousTypes
         {
             Console.OutputEncoding = Encoding.UTF8;
 
+            //Ints
+
             int number;
             number = 8;
 
@@ -29,27 +31,38 @@ namespace VariousTypes
 
             char StarSymbol ='\u2727';
 
-            //Strings
+            //Real Numbers
 
-            string message = "Hello World!";
+            double pi1 = 3.1415;
+
+            float pi2 = 3.1415f;
+
+            decimal pi3 = 3.1415m;
+
             
-            message = "Bye World";
 
-            string StringTest = "One tab\t and one copyright\u03a9";
+            //Booleans
+            bool condition1 = false;
+            bool condition2 = true;
 
 
+            //Int
             Console.WriteLine("Hello LP1!");
             Console.WriteLine(number);
             Console.WriteLine(number2);
             Console.WriteLine(number3);
             Console.WriteLine(number4);
             Console.WriteLine(number5);
-
+            //Char
             Console.WriteLine(copyrightSymbol);
             Console.WriteLine(StarSymbol);
-
-            Console.WriteLine(message);
-            Console.WriteLine(StringTest);
+            //REAL
+            Console.WriteLine(pi1);
+            Console.WriteLine(pi2);
+            Console.WriteLine(pi3);
+            //Booleans
+            Console.WriteLine(condition1);
+            Console.WriteLine(condition2);
         }
     }
 }
