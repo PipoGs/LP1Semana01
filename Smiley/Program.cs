@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Globalization;
 
 namespace Smiley
 {
@@ -10,13 +11,12 @@ namespace Smiley
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Escreva um numero inteiro em formato hexadecimal: ");
 
+            //Conversâo
             string input = Console.ReadLine();
-            int conversion1 = int.Parse(input);
-            char unicode = (char)conversion1;
+            int conversionuni = int.Parse(input, System.Globalization.NumberStyles.HexNumber);
+            string unicodeconver = char.ConvertFromUtf32(conversionuni).ToString();
 
-            //char unicode = "$({\u} + {conversion});
-
-           Console.WriteLine(unicode);
+            Console.WriteLine(unicodeconver);
 
             
             
